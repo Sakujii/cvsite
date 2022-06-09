@@ -1,5 +1,4 @@
 /*===== GOOGLE FONTS =====*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
   --header-height: 3rem;
@@ -13,7 +12,7 @@
   --body-color: #FCFCFC;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Poppins', 'sans-serif';
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -33,4 +32,91 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+}
+
+body {
+  margin: 0 0 3rem 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: .938rem;
+  background-color: #FCFCFC;
+  color: #403A3A;
+}
+
+h1,h2,h3 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section{
+  padding: 1.5rem 0;
+}
+
+.section-title{
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  text-transfrom: uppercase;
+  letter-spacing: .35rem;
+  text-align: center;
+  margin-bottom: var(--mb-3);
+}
+
+.home{
+  position: relative;
+}
+
+.home_data{
+  gap: .5rem;
+  text-align: center;
+}
+
+.home_img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: var(--mb-1)
+
+}
+
+.home_container{
+  gap: 3rem;
+}
+
+.home_title{
+  font-size: var(--h1-font-size);
+}
+
+.home_profession{
+  font-size: var(--normal-font-size);
+}
+
+.home_address{
+  gap: 1rem;
+}
+
+.home_information{
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  font-size: var(--small-font-size);
+}
+
+.home_icon{
+  font-size: 1.2rem;
+  margin-right: .25rem;
 }
