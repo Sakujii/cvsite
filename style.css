@@ -112,6 +112,7 @@ img {
 .home_information{
   display: flex;
   margin-left: 10px;
+  margin-bottom: 2px;
   align-items: center;
   font-size: var(--small-font-size);
 }
@@ -119,4 +120,24 @@ img {
 .home_icon{
   font-size: 1.2rem;
   margin-right: .25rem;
+}
+
+.social_container{
+  width: 100%;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+.social_link{
+  display: block;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-left: 10px;
+}
+
+.social_icon{
+  font-size: 1.5rem;
+  margin-right: 5px;
 }
