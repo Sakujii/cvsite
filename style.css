@@ -35,7 +35,7 @@
 }
 
 body {
-  margin: 0 5px 3rem 5px;
+  margin: 0 10px 3rem 10px;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   font-size: .938rem;
@@ -87,8 +87,8 @@ img {
 }
 
 .home_img{
-  width: 120px;
-  height: 120px;
+  width: 40vw;
+  height: auto;
   border-radius: 50%;
   margin-bottom: var(--mb-1)
 
@@ -123,11 +123,17 @@ img {
   margin-right: .25rem;
 }
 
+.social_section{
+}
+
 .social_container{
-  width: 100%;
+  display: flex;
   grid-template-columns: repeat(4,1fr);
-  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .social_link{
@@ -139,33 +145,37 @@ img {
 }
 
 .social_icon{
-  font-size: 1.5rem;
-  margin-right: 5px;
+  font-size: 4rem;
+  margin-right: 50px;
 }
 
 .profile_description{
   text-align: justify;
 }
 
-.education_content{
+.education_content,
+.experience_content{
   display:flex;
 }
 
-.education_time{
+.education_time,
+.experience_time{
   padding-right: 1.5rem;
 }
 
-.education_rounder{
+.education_rounder,
+.experience_rounder{
   position: relative;
   display: block;
   width: 16px;
   height: 16px;
   background-color: var(--text-color-light);
   border-radius: 50%;
-  margin-top: 1.4rem;
+  margin-top: 1.3rem;
 }
 
-.education_line{
+.education_line,
+.experience_line{
   display: block;
   width: 2px;
   height: 95%;
@@ -173,11 +183,13 @@ img {
   margin-left: 7px;
 }
 
-.education_title{
+.education_title,
+.experience_title{
   margin-top: 1rem;
 }
 
-.education_data{
+.education_data,
+.experience_data{
   display: block;
 }
 
@@ -204,9 +216,50 @@ img {
   display: block;
 }
 
-.education_list{
+.education_list,
+.experience_list{
   display: block;
   list-style-type: disc;
   color: var(--text-color-light);
   margin-left: 1rem;
+}
+
+.skills_content{
+  display:flex;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  justify-content: center;
+  gap:0;
+}
+
+.skills_name{
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+  margin-bottom: var(--mb-3);
+  font-weight: var(--font-semi-bold)
+}
+
+.skills_circle{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  margin-right: .75rem;
+}
+
+
+.experience_year{
+  display: block;
+}
+
+.experience_company{
+  display: block;
+  font-size: 1.05rem;
+  font-weight: var(--font-medium);
+}
+
+#experience-end{
+  height: 79%;
 }
