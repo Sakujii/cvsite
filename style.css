@@ -123,29 +123,24 @@ img {
 }
 
 .social_section{
+
 }
 
 .social_container{
-  display: flex;
-  grid-template-columns: repeat(4,1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin: auto;
   margin-top: 2rem;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
 }
 
 .social_link{
-  display: block;
-  align-items: center;
-  font-size: var(--small-font-size);
-  color: var(--text-color);
-  margin-left: 10px;
+    margin: auto;
 }
 
 .social_icon{
-  font-size: 4rem;
-  margin-right: 50px;
+  display: flex;
+  font-size: 10vw;
+  align-items: center;
 }
 
 .profile_description{
@@ -237,7 +232,7 @@ img {
 }
 
 .skills_name{
-  display: flex;
+  display: block;
   align-items: center;
 }
 
@@ -254,7 +249,9 @@ img {
   height: .9rem;
   background-color: #585858;
   border-radius: 50%;
+  transform: translateY(1px);
 }
+
 
 .empty_circle{
   display: inline-block;
@@ -262,6 +259,7 @@ img {
   height: .9rem;
   background-color: #E8E8E8;
   border-radius: 50%;
+  transform: translateY(1px);
 }
 
 
@@ -302,4 +300,48 @@ img {
   font-size: 2rem;
   color: var(--text-color-light);
   margin-bottom: .25rem;
+}
+
+#philosophy{
+  font-style: italic;
+  font-size: var(--h3-font-size);
+}
+
+/*====MEDIA QUERIES=====*/
+
+@media screen and (min-width: 968px){
+  body{
+    margin: 3rem 3rem 3rem;
+  }
+
+  .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home_img{
+    width:200px;
+  }
+
+  .social_icon{
+    font-size: 5vw;
+    margin-right: 1vw;
+  }
+
+  .resume{
+    display: grid;
+    grid-template-columns: 40vw 50vw;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+  }
+
+  .resume_left{
+    background-color: var(--container-color-alt);
+  }
+
+  .resume_left,
+  .resume__right{
+    padding: 0 1.5rem;
+  }
+
 }
