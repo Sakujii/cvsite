@@ -128,7 +128,7 @@ img {
 
 .social_container{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   margin: auto;
   margin-top: 2rem;
 }
@@ -305,6 +305,10 @@ img {
 #philosophy{
   font-style: italic;
   font-size: var(--h3-font-size);
+}
+
+#discogs{
+  text-decoration: underline;
 }
 
 /*====MEDIA QUERIES=====*/
