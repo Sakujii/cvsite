@@ -9,6 +9,7 @@
   --container-color: #FAFAFA;
   --container-color-alt: #F0EFEF;
   --body-color: #FCFCFC;
+  --empty-circle-color: #E8E8E8;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', 'sans-serif';
@@ -36,10 +37,10 @@
 body {
   margin: 0 10px 3rem 10px;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--body-font);
   font-size: .938rem;
-  background-color: #FCFCFC;
-  color: #403A3A;
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
 h1,h2,h3 {
@@ -76,6 +77,9 @@ img {
   margin-bottom: var(--mb-3);
 }
 
+
+
+/*========== HOME ==========*/
 .home{
   position: relative;
 }
@@ -122,6 +126,9 @@ img {
   margin-right: .25rem;
 }
 
+
+/*========== SOCIAL ==========*/
+
 .social_section{
 
 }
@@ -147,6 +154,7 @@ img {
   text-align: justify;
 }
 
+/*========== EDUCATION AND EXPERIENCE ==========*/
 .education_content,
 .experience_content{
   display:flex;
@@ -218,6 +226,28 @@ img {
   margin-left: 1rem;
 }
 
+.experience_year{
+  display: block;
+}
+
+.experience_company{
+  display: block;
+  font-size: 1.05rem;
+  font-weight: var(--font-medium);
+}
+
+.experience_description{
+  color: var(--text-color-light);
+}
+
+#experience-end{
+  height: 79%;
+}
+
+
+
+/*========== SKILLS AND LANGUAGES ==========*/
+
 .skills_content{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -247,7 +277,7 @@ img {
   display: inline-block;
   width: .9rem;
   height: .9rem;
-  background-color: #585858;
+  background-color: var(--text-color-light);
   border-radius: 50%;
   transform: translateY(1px);
 }
@@ -257,29 +287,13 @@ img {
   display: inline-block;
   width: .9rem;
   height: .9rem;
-  background-color: #E8E8E8;
+  background-color: var(--empty-circle-color);
   border-radius: 50%;
   transform: translateY(1px);
 }
 
 
-.experience_year{
-  display: block;
-}
-
-.experience_company{
-  display: block;
-  font-size: 1.05rem;
-  font-weight: var(--font-medium);
-}
-
-#experience-end{
-  height: 79%;
-}
-
-#references{
-  text-align: center;
-}
+/*========== INTERESTS ==========*/
 
 .interests_container{
   display: grid;
@@ -302,16 +316,47 @@ img {
   margin-bottom: .25rem;
 }
 
+/*========== MISC ==========*/
+
 #philosophy{
   font-style: italic;
   font-size: var(--h3-font-size);
 }
 
-#discogs{
+#discogs, #codeberry{
   text-decoration: underline;
 }
 
-/*====MEDIA QUERIES=====*/
+#references{
+  text-align: center;
+}
+
+.change-theme{
+  position: absolute;
+  right:0;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.change-theme:hover{
+  color: var(--title-color)
+}
+
+body.dark-theme{
+  --title-color: #F2F2F2;
+  --text-color: #F2F2F2;
+  --text-color-light: #BFBFBF;
+  --container-color: #212121;
+  --container-color-alt: #181616;
+  --body-color: #2B2B2B;
+  --empty-circle-color: #0B0A0A;
+}
+
+
+/*========== MEDIA QUERIES ==========*/
 
 @media screen and (min-width: 968px){
   body{
